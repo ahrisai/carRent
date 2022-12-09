@@ -3,27 +3,26 @@ document.getElementById('main-action').onclick=function(){
 }
 
 var buttons=document.getElementsByClassName('car-button');
+
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].onclick=function(){
         document.getElementById('price').scrollIntoView({behavior:"smooth"});
     }
 }
 
+
 document.getElementById('price-button').onclick=function(){
     if(document.getElementById('name').value===''){
-        
         document.getElementById('name').placeholder="Введите ваше имя!!!"
     }
      if(document.getElementById('number').value===''){
-        
         document.getElementById('number').placeholder="Введите ваш телефон!!!"
     }
     if(document.getElementById('car').value===''){
-        
         document.getElementById('car').placeholder="Введите автомобиль!!!"
-    }
-    
+    }   
 }
+
 
 document.addEventListener("DOMContentLoaded", function () {
     let layer = document.querySelector('.price-image');
